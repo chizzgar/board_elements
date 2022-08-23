@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+    <title>board elements</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="description">Панель Проверки - сброса</div>
+      <div class="checkTask">
+        <div type="button" class="reloadTask taskBtn">СБРОС <div class="reloadIconTask">&#8635;</div></div>
+        <div class="chek_answer"></div>
+        <div type="button" class="checkingTask taskBtn"><div class="checkIconTask">&#10004;</div> ПРОВЕРИТЬ</div>
+      </div>
+
+      <div class="description">Кнопки для слайдбара (для скролла элементов)</div>
+      <div class="scrollBar_buttons">
+        <div class="scrollBar_button">
+          <div class="scrollBar_arrow scrollBar_arrow_left"></div>
+        </div>
+        <div class="scrollBar_button">
+          <div class="scrollBar_arrow scrollBar_arrow_right"></div>
+        </div>
+      </div>
+
+
+      <div class="description">Кнопки для галереи (на светлом и тёмном фоне)</div>
+      <div class="gallery_buttons">
+        <div class="gallery_arrow gallery_arrow_left"></div>
+        <div class="gallery_arrow gallery_arrow_right"></div>
+        <div class="gallary_buttons_white">
+          <div class="gallery_arrow_white gallery_arrow_left_white"></div>
+          <div class="gallery_arrow_white gallery_arrow_right_white"></div>
+        </div>
+      </div>
+
+
+      <div class="description">Контейнер слайдбара (для скролла элементов)</div>
+      <div class="scrollBar_wrapper">
+        <div class="scrollBar_container"></div>
+      </div>
+
+      <div class="description">ПРОТОТИП(не используется)<br/>Иконка запуска звука (проигрывание - пауза)</div>
+      <div class="icon_speaker_wrapper">
+        <div class="icon_speaker_button">
+          <div class="icon_speaker_volume"></div>
+        </div>
+      </div>
+
+
+      <div class="description">Иконки увеличения картинки (на светлом и тёмном фоне)</div>
+      <div class="icon_zoomPicture_wrapper">
+          <div class="icon_zoomPicture"></div>
+          <div class="gallary_buttons_white">
+          <div class="icon_zoomPicture whiteZoomImg"></div>
+          </div>
+          
+      </div>
+      <div class="description">Индикация неверного верного ответа</div>
+      <div class="indicatorCheck_wrapper">
+        <div class="indicatorCheck_color wrongChoice_answered">неверно</div>
+        <div class="indicatorCheck_color rightChoice_answered">верно</div>
+      </div>
+
+    </div>
+
+    <div style="display: none !important">
+      <audio preload="auto" src="assets/numders_voice.mp3" id="numders_voice"></audio>
+    </div>
+    <script src="assets/script.js" type="text/javascript"></script>
+  </body>
+</html>
