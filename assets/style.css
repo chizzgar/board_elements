@@ -555,7 +555,11 @@
   display: -ms-flexbox;
   display: flex;
   width: 10em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -576,6 +580,7 @@
 /**/
 
 .icon_close_button {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -586,22 +591,26 @@
   cursor: pointer;
   scale: 3;
   color: #0892a7;
-  
 }
 .icon_close_button::after,
 .icon_close_button::before {
   content: "";
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
   width: 16px;
   height: 2px;
   background: currentColor;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   border-radius: 5px;
   top: 8px;
   left: 1px;
 }
 .icon_close_button::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
