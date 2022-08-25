@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
 Папортниковый
 #74BC5B
 
@@ -142,10 +149,10 @@
 }
 .scrollBar_arrow_left {
   top: 17px;
+  left: 19px;
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  left: 19px;
 }
 
 /**/
@@ -195,7 +202,7 @@
   display: flex;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2em;
+  padding: 20px;
   border-radius: 12px;
   margin-left: 2em;
   background-color: #0892a7;
@@ -315,21 +322,6 @@
   transform: rotate(0deg);
   transition: transform 0.3s ease;
 } */
-
-/*
-Папортниковый
-#74BC5B
-
-Васильковый
-#474EF8
-
-Банановый
-#F8D047
-
-Небесный
-#89D4FB
-
-*/
 
 @-webkit-keyframes playAction {
   0% {
@@ -491,6 +483,19 @@
   gap: 2em;
 }
 
+.zoom_open_button_white {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 2em;
+  background-color: #0892a7;
+}
+
 .icon_zoomPicture {
   cursor: pointer;
   scale: 1.5;
@@ -533,6 +538,7 @@
 }
 
 .whiteZoomImg {
+  pointer-events: none;
   color: #fff;
 }
 
@@ -578,6 +584,22 @@
 }
 
 /**/
+.demo_wrapper_icon_close {
+  border-radius: 12px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+background-color: #0892a7;
+width: 50px;
+height: 50px;
+}
+
 
 .icon_close_button {
   -webkit-box-sizing: border-box;
@@ -592,6 +614,11 @@
   scale: 3;
   color: #0892a7;
 }
+
+.close_icon_white {
+  color: #ffffff;
+}
+
 .icon_close_button::after,
 .icon_close_button::before {
   content: "";
@@ -614,3 +641,4 @@
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+

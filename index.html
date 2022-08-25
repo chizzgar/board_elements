@@ -9,12 +9,17 @@
 
   <body>
     <div class="container">
-
       <div class="description">Панель Проверки - сброса</div>
       <div class="checkTask">
-        <div type="button" class="reloadTask taskBtn">СБРОС <div class="reloadIconTask">&#8635;</div></div>
+        <div type="button" class="reloadTask taskBtn">
+          СБРОС
+          <div class="reloadIconTask">&#8635;</div>
+        </div>
         <div class="chek_answer"></div>
-        <div type="button" class="checkingTask taskBtn"><div class="checkIconTask">&#10004;</div> ПРОВЕРИТЬ</div>
+        <div type="button" class="checkingTask taskBtn">
+          <div class="checkIconTask">&#10004;</div>
+          ПРОВЕРИТЬ
+        </div>
       </div>
 
       <div class="description">Кнопки для слайдбара (для скролла элементов)</div>
@@ -27,7 +32,7 @@
         </div>
       </div>
 
-      <div class="description">Кнопки для галереи (на светлом и тёмном фоне)</div>
+      <div class="description">Кнопки для галереи (белые брать без родителя т.е. без фона)</div>
       <div class="gallery_buttons">
         <div class="gallery_arrow gallery_arrow_left"></div>
         <div class="gallery_arrow gallery_arrow_right"></div>
@@ -42,23 +47,22 @@
         <div class="scrollBar_container"></div>
       </div>
 
-      <div class="description">ПРОТОТИП(не используется)<br/>Иконка запуска звука (проигрывание - пауза)</div>
+      <div class="description">ПРОТОТИП(не используется)<br />Иконка запуска звука (проигрывание - пауза)</div>
       <div class="icon_speaker_wrapper">
         <div class="icon_speaker_button">
           <div class="icon_speaker_volume"></div>
         </div>
       </div>
 
-      <div class="description">Иконки увеличения картинки (на светлом и тёмном фоне)</div>
+      <div class="description">Иконки увеличения картинки (на светлом и тёмном фоне, на тёмном фоне брать с родителем)</div>
       <div class="icon_zoomPicture_wrapper">
+        <div class="icon_zoomPicture"></div>
 
-          <div class="icon_zoomPicture"></div>
-          
-          <div class="gallary_buttons_white">
+        <div class="zoom_open_button_white">
           <div class="icon_zoomPicture whiteZoomImg"></div>
-          </div>
+        </div>
       </div>
-      
+
       <div class="description">Индикация неверного верного ответа</div>
       <div class="indicatorCheck_wrapper">
         <div class="indicatorCheck_color wrongChoice_answered">неверно</div>
@@ -77,11 +81,14 @@
          -->
       </div>
 
-      <div class="description">Кнопка закрытия модалки с изображением</div>
+      <div class="description">Кнопка закрытия модалки с изображением (белую брать без родителя т.е. без фона)</div>
       <div class="indicatorCheck_wrapper">
         <div class="icon_close_button"></div>
-      </div>
 
+        <div class="demo_wrapper_icon_close">
+          <div class="icon_close_button close_icon_white"></div>
+        </div>
+      </div>
     </div>
 
     <div style="display: none !important">
