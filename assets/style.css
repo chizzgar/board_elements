@@ -1,12 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-Папортниковый
+/*Папортниковый
 #74BC5B
 
 Васильковый
@@ -16,9 +8,7 @@
 #F8D047
 
 Небесный
-#89D4FB
-
-*/
+#89D4FB*/
 
 /* box-shadow: -1px -2px 11px 0px #ffffff, 2px 5px 11px 4px #cbcdd3; */
 
@@ -485,14 +475,16 @@
 
 .zoom_open_button_white {
   cursor: pointer;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 5px;
-  border-radius: 50%;
-  margin-left: 2em;
+  padding: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 25% 50%;
+  /* margin-left: 2em; */
   background-color: #0892a7;
 }
 
@@ -539,6 +531,7 @@
 
 .whiteZoomImg {
   pointer-events: none;
+  transform: rotate(359deg);
   color: #fff;
 }
 
@@ -586,20 +579,19 @@
 /**/
 .demo_wrapper_icon_close {
   border-radius: 12px;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
-background-color: #0892a7;
-width: 50px;
-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #0892a7;
+  width: 50px;
+  height: 50px;
 }
-
 
 .icon_close_button {
   -webkit-box-sizing: border-box;
@@ -641,4 +633,3 @@ height: 50px;
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
