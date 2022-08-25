@@ -16,7 +16,7 @@
 /* box-shadow: -1px -2px 11px 0px #ffffff, 2px 5px 11px 4px #cbcdd3; */
 
 .container {
-  width: 70%;
+  width: 50%;
   margin: 10% auto;
 }
 
@@ -32,7 +32,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 825px;
+  width: 100%;
   border-radius: 12px !important;
 }
 
@@ -50,6 +50,8 @@
 .chek_answer > p {
   margin: 0 0 0 0;
   font-size: 30px;
+  min-height: 35px !important;
+  max-height: 35px !important;
 }
 
 .taskBtn {
@@ -76,7 +78,10 @@
   padding: 10px !important;
   font-size: 26px !important;
   color: white !important;
-  min-width: 230px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+  min-height: 35px !important;
+  max-height: 35px !important;
   margin: 0 !important;
 }
 
@@ -436,9 +441,6 @@
   box-sizing: border-box;
   position: absolute;
   display: block;
-  -webkit-transform: scale(var(--ggs, 1));
-  -ms-transform: scale(var(--ggs, 1));
-  transform: scale(var(--ggs, 1));
   width: 8px;
   height: 8px;
   border: 2px solid;
@@ -503,7 +505,7 @@
   background: -o-linear-gradient(top, currentColor 5px, transparent 0) no-repeat 2px 5px/8px 2px;
   background: linear-gradient(to bottom, currentColor 5px, transparent 0) no-repeat 2px 5px/8px 2px;
   color: #0892a7;
-  margin-top: -4px;
+  margin: 5px;
 }
 
 .icon_zoomPicture::after,
@@ -569,4 +571,37 @@
 .rightChoice_answered {
   -webkit-box-shadow: 0px 0px 7px 7px lightgreen, 0px 0px 10px 0px lightgreen;
   box-shadow: 0px 0px 7px 7px lightgreen, 0px 0px 10px 0px lightgreen;
+}
+
+/**/
+
+.icon_close_button {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  scale: 3;
+  color: #0892a7;
+  
+}
+.icon_close_button::after,
+.icon_close_button::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  top: 8px;
+  left: 1px;
+}
+.icon_close_button::after {
+  transform: rotate(-45deg);
 }
