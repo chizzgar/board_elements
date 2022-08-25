@@ -40,10 +40,10 @@
 
     checkingTaskBtn.addEventListener('click', () => {
         if (winVar === 1) {
-            chek_answerTxt.innerHTML = '<div><span>&#128516;</span>&#8195;Молодец!</div>'
+            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128516;&nbsp;&nbsp;Молодец!</div>'
             checkTask.style.background = 'lightgreen'
         } else {
-            chek_answerTxt.innerHTML = '<div><span>&#128528</span>&#8195;Попробуй еще!</div>'
+            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128528;&nbsp;&nbsp;Попробуй&nbsp;еще!</div>'
             checkTask.style.background = 'lightpink'
         }
         winVar = 0;

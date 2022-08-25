@@ -13,7 +13,7 @@
 /* box-shadow: -1px -2px 11px 0px #ffffff, 2px 5px 11px 4px #cbcdd3; */
 
 .container {
-  width: 50%;
+  width: 70%;
   margin: 10% auto;
 }
 
@@ -22,33 +22,48 @@
   margin: 2em 0;
 }
 
+
+
+
+
 .checkTask {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   border-radius: 12px !important;
+  min-height: 35px !important;
+  max-height: 35x !important;
 }
 
 .chek_answer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans;
-  font-size: 30px;
-}
-
-.chek_answer > p {
-  margin: 0 0 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans !important;
   font-size: 30px;
   min-height: 35px !important;
-  max-height: 35px !important;
+  max-height: 35x !important;
+}
+
+.answer_indicator {
+  padding: 0 12px;
 }
 
 .taskBtn {
@@ -73,12 +88,12 @@
   border-radius: 12px !important;
   background-color: #0ab7d3 !important;
   padding: 10px !important;
-  font-size: 26px !important;
+  font-size: 26px;
   color: white !important;
-  min-width: 220px !important;
-  max-width: 220px !important;
-  min-height: 35px !important;
-  max-height: 35px !important;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 35px;
+  max-height: 35px;
   margin: 0 !important;
 }
 
@@ -95,6 +110,26 @@
   -webkit-box-shadow: -2px -2px 15px #b8b7b7, 2px 2px 15px #99999b !important;
   box-shadow: -2px -2px 15px #b8b7b7, 2px 2px 15px #99999b !important;
 }
+
+@media screen and (max-width: 1250px) {
+    .taskBtn {
+        min-width: 170px !important;
+  max-width: 170px !important;
+       font-size: 20px !important;
+    }
+  .chek_answer {
+        font-size: 22px !important;
+      }
+}
+
+@media screen and (max-width: 900px) {
+    .taskBtn {
+        min-width: 145px !important;
+  max-width: 145px !important;
+       font-size: 18px !important;
+    }
+}
+
 
 /**/
 .scrollBar_buttons {
@@ -475,16 +510,12 @@
 
 .zoom_open_button_white {
   cursor: pointer;
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 4px;
-  width: 34px;
-  height: 34px;
+  padding: 3px;
+  width: 32px;
+  height: 32px;
   border-radius: 50% 50% 25% 50%;
-  /* margin-left: 2em; */
   background-color: #0892a7;
 }
 
@@ -531,7 +562,9 @@
 
 .whiteZoomImg {
   pointer-events: none;
-  transform: rotate(359deg);
+  -webkit-transform: rotate(359deg);
+      -ms-transform: rotate(359deg);
+          transform: rotate(359deg);
   color: #fff;
 }
 
