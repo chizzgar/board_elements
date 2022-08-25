@@ -13,7 +13,7 @@
 /* box-shadow: -1px -2px 11px 0px #ffffff, 2px 5px 11px 4px #cbcdd3; */
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: 10% auto;
 }
 
@@ -22,15 +22,11 @@
   margin: 2em 0;
 }
 
-
-
-
-
 .checkTask {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,8 +34,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   border-radius: 12px !important;
   min-height: 35px !important;
@@ -48,8 +44,8 @@
 
 .chek_answer {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,24 +108,23 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .taskBtn {
-        min-width: 170px !important;
-  max-width: 170px !important;
-       font-size: 20px !important;
-    }
+  .taskBtn {
+    min-width: 170px !important;
+    max-width: 170px !important;
+    font-size: 20px !important;
+  }
   .chek_answer {
-        font-size: 22px !important;
-      }
+    font-size: 22px !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .taskBtn {
-        min-width: 145px !important;
-  max-width: 145px !important;
-       font-size: 18px !important;
-    }
+  .taskBtn {
+    min-width: 145px !important;
+    max-width: 145px !important;
+    font-size: 18px !important;
+  }
 }
-
 
 /**/
 .scrollBar_buttons {
@@ -563,8 +558,8 @@
 .whiteZoomImg {
   pointer-events: none;
   -webkit-transform: rotate(359deg);
-      -ms-transform: rotate(359deg);
-          transform: rotate(359deg);
+  -ms-transform: rotate(359deg);
+  transform: rotate(359deg);
   color: #fff;
 }
 
