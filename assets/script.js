@@ -32,22 +32,25 @@
     };
 
     reloadTaskBtn.addEventListener('click', () => {
-        checkTask.style.background = 'transparent';
+        checkTask.classList.remove('chek_answer_rightChoice_color');
+        checkTask.classList.remove('chek_answer_wrongChoice_color');
         chek_answerTxt.firstElementChild !== null && chek_answerTxt.removeChild(chek_answerTxt.firstElementChild);
         winVar = 1;
     });
 
-
     checkingTaskBtn.addEventListener('click', () => {
         if (winVar === 1) {
-            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128516;&nbsp;&nbsp;Молодец!</div>'
-            checkTask.style.background = 'lightgreen'
+            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128516;&nbsp;&nbsp;Молодец!</div>';
+            checkTask.classList.add('chek_answer_rightChoice_color');
+            checkTask.classList.remove('chek_answer_wrongChoice_color');
         } else {
-            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128528;&nbsp;&nbsp;Попробуй&nbsp;еще!</div>'
-            checkTask.style.background = 'lightpink'
+            chek_answerTxt.innerHTML = '<div class="answer_indicator">&#128528;&nbsp;&nbsp;Попробуй&nbsp;еще!</div>';
+            checkTask.classList.add('chek_answer_wrongChoice_color');
+            checkTask.classList.remove('chek_answer_rightChoice_color');
         }
         winVar = 0;
     });
 
-    
+
+
 })();
