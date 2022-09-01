@@ -1,3 +1,166 @@
+/* BLACK BUTTON STYLES */
+.demo_background {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: #0892a7;
+}
+.buttonPlayPausePlayPause_wrap {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2px 0 0;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+}
+.buttonPlayPause--play {
+  background-color: white;
+  border-radius: 50%;
+}
+.buttonPlayPause--play .buttonPlayPause__shape {
+  pointer-events: none;
+  width: 9px;
+  height: 22px;
+  background-color: black;
+  /* mix-blend-mode: difference; */
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.buttonPlayPause--play .buttonPlayPause__shape--one {
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 75%, 0% 100%);
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
+}
+.buttonPlayPause--play .buttonPlayPause__shape--two {
+  -webkit-clip-path: polygon(0 25%, 100% 50%, 100% 50%, 0 75%);
+  -webkit-transform: translateX(4.9px);
+  -ms-transform: translateX(4.9px);
+  transform: translateX(4.9px);
+}
+.buttonPlayPause--play.buttonPlayPause--active .buttonPlayPause__shape--one {
+  -webkit-clip-path: polygon(0 15%, 50% 15%, 50% 85%, 0% 85%);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.buttonPlayPause--play.buttonPlayPause--active .buttonPlayPause__shape--two {
+  -webkit-clip-path: polygon(50% 15%, 100% 15%, 100% 85%, 50% 85%);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* ДОП СТИЛИ ДЛЯ ПАНЕЛИ ПРОВЕРКИ ПОД СТАРЫЕ КУРСЫ */
+
+.temporary {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.head {
+  padding-top: 0.7em;
+  margin-bottom: 2em;
+  width: 95%;
+  height: 3em;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -khtml-border-radius: 0.5em;
+  padding-left: 5%;
+  background-color: #0ab7d3;
+}
+
+.head div {
+  vertical-align: bottom;
+  display: inline-block;
+  background-size: auto 100%;
+  height: 99%;
+  bottom: 0;
+  margin-left: 0.2em;
+}
+
+.interakt_zadanie {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10% auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* border: 2px solid black; */
+}
+
+.drop {
+  width: 10%;
+  background: url(head_img/1.png) no-repeat;
+  cursor: pointer;
+}
+
+/* .save {
+      width: 10%;
+      background: url(../Images_18/head_img/) no-repeat;
+      cursor: pointer;
+      display: none !important;
+    } */
+
+.check_your {
+  width: 10%;
+  background: url(head_img/6.png) no-repeat;
+  cursor: pointer;
+}
+
+.check_your_active {
+  background: url(head_img/5.png) no-repeat;
+}
+
+.result {
+  width: 40%;
+  width: 15em;
+  float: right;
+}
+
+.result_lose {
+  background: url(head_img/7.png) 0em 0em / 100% no-repeat;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.result_win {
+  background: url(head_img/8.png) 0em 0em / 100% no-repeat;
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* КОНЕЦ СТАРЫХ СТЛЕЙ ДЛЯ МОТОБРОВИ И КНОПКИ ПЛЕЙ */
+
+
+
 /*Папортниковый
 #74BC5B
 
@@ -572,6 +735,7 @@
 
 /**/
 .indicatorCheck_wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
